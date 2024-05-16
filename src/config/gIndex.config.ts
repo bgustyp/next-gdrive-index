@@ -64,8 +64,7 @@ const config: z.input<typeof Schema_Config> = {
      */
     // rootFolder:
     //   "c760fc0eae9990d4accbc2134af21e45a378d412af2c78020070a9f9ac548b98fe61c4f6be953a8d7be6a035e6f7766c",
-    rootFolder:
-      "b76c7c22083307a3aa99c28ab7cc69851d682f5a250d995679d4be5276cab16ab6c37f4d5b7ad1a9b93fb9bf768e752c",
+    rootFolder: "48d2dd736d89d31bf4a3df09976ba0d8b15c0053daced8d544e5a2e104a5552caf2ba89900a4da327483bd2e819421b4",
 
     /**
      * If your rootfolder inside a shared drive, you NEED to set this to true
@@ -80,9 +79,8 @@ const config: z.input<typeof Schema_Config> = {
      *
      * Then you need to encrypt it using `/api/internal/encrypt?q=:shared_drive_id` route
      */
-    isTeamDrive: true,
-    sharedDrive:
-      "77bfa156c9c9d159112fcb0494ed8545bdaf7a3d567cd760ba2e2e2cd33fcbfc",
+    isTeamDrive: false,
+    sharedDrive: "",
 
     defaultQuery: [
       "trashed = false",
@@ -199,9 +197,9 @@ const config: z.input<typeof Schema_Config> = {
      *
      * You can set it to undefined if you don't want to use it
      */
-    siteName: "next-gdrive-index",
+    siteName: "Index Resources",
     siteNameTemplate: "%s - next-gdrive-index",
-    siteDescription: "A simple file browser for Google Drive",
+    siteDescription: "Index Resources",
     siteIcon: "/logo.svg",
     siteAuthor: "mbaharip",
     favIcon: "/favicon.png",
@@ -211,7 +209,7 @@ const config: z.input<typeof Schema_Config> = {
      * ref: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#robots
      */
     robots: "noindex, nofollow",
-    twitterHandle: "@mbaharip_",
+    twitterHandle: "@kulokenci",
 
     /**
      * Show file extension on the file name
@@ -295,22 +293,22 @@ const config: z.input<typeof Schema_Config> = {
      * }
      */
     navbarItems: [
-      {
-        icon: "FileText",
-        name: "Documentation",
-        href: "https://github.com/mbahArip/next-gdrive-index/wiki",
-        external: true,
-      },
-      {
-        icon: "Github",
-        name: "Github",
-        href: "https://www.github.com/mbaharip",
-        external: true,
-      },
+      // {
+      //   icon: "FileText",
+      //   name: "Documentation",
+      //   href: "https://github.com/mbahArip/next-gdrive-index/wiki",
+      //   external: true,
+      // },
+      // {
+      //   icon: "Github",
+      //   name: "Github",
+      //   href: "https://www.github.com/mbaharip",
+      //   external: true,
+      // },
       {
         icon: "Mail",
         name: "Contact",
-        href: "mailto:support@mbaharip.com",
+        href: "mailto:bagussetya@email.com",
       },
     ],
 
@@ -324,21 +322,21 @@ const config: z.input<typeof Schema_Config> = {
      * }
      */
     supports: [
-      {
-        name: "Paypal",
-        currency: "USD",
-        href: "https://paypal.me/mbaharip",
-      },
-      {
-        name: "Ko-fi",
-        currency: "USD",
-        href: "https://ko-fi.com/mbaharip",
-      },
-      {
-        name: "Saweria",
-        currency: "IDR",
-        href: "https://saweria.co/mbaharip",
-      },
+      // {
+      //   name: "Paypal",
+      //   currency: "USD",
+      //   href: "https://paypal.me/mbaharip",
+      // },
+      // {
+      //   name: "Ko-fi",
+      //   currency: "USD",
+      //   href: "https://ko-fi.com/mbaharip",
+      // },
+      // {
+      //   name: "Saweria",
+      //   currency: "IDR",
+      //   href: "https://saweria.co/mbaharip",
+      // },
     ],
   },
 };
