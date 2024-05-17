@@ -201,7 +201,7 @@ const config: z.input<typeof Schema_Config> = {
     siteNameTemplate: "%s - next-gdrive-index",
     siteDescription: "Index Resources",
     siteIcon: "/logo.svg",
-    siteAuthor: "mbaharip",
+    siteAuthor: "kulokenci",
     favIcon: "/favicon.png",
     /**
      * Next.js Metadata robots object
@@ -209,7 +209,7 @@ const config: z.input<typeof Schema_Config> = {
      * ref: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#robots
      */
     robots: "noindex, nofollow",
-    twitterHandle: "@kulokenci",
+    twitterHandle: "@bgustyp",
 
     /**
      * Show file extension on the file name
@@ -239,9 +239,10 @@ const config: z.input<typeof Schema_Config> = {
      * - {{ creator }} will be replaced with mbaharip if you want to credit me
      */
     footer: [
-      "{{ siteName }} *v{{ version }}* @ {{ repository }}",
+      "{{ siteName }} *v{{ version }}*",
+      // "{{ siteName }} *v{{ version }}* @ {{ repository }}",
       "{{ year }} - Made with ❤️ by **{{ author }}**",
-      isDev ? "Development Mode" : "",
+      // isDev ? "Development Mode" : "",
     ],
 
     /**
@@ -299,16 +300,16 @@ const config: z.input<typeof Schema_Config> = {
       //   href: "https://github.com/mbahArip/next-gdrive-index/wiki",
       //   external: true,
       // },
-      // {
-      //   icon: "Github",
-      //   name: "Github",
-      //   href: "https://www.github.com/mbaharip",
-      //   external: true,
-      // },
+      {
+        icon: "Github",
+        name: "Github",
+        href: "https://www.github.com/kulokenci",
+        external: true,
+      },
       {
         icon: "Mail",
         name: "Contact",
-        href: "mailto:bagussetya@email.com",
+        href: "mailto:kulo.kenci@gmail.com",
       },
     ],
 
@@ -325,18 +326,18 @@ const config: z.input<typeof Schema_Config> = {
       // {
       //   name: "Paypal",
       //   currency: "USD",
-      //   href: "https://paypal.me/mbaharip",
+      //   href: "https://paypal.me/bgustyp",
       // },
       // {
       //   name: "Ko-fi",
       //   currency: "USD",
       //   href: "https://ko-fi.com/mbaharip",
       // },
-      // {
-      //   name: "Saweria",
-      //   currency: "IDR",
-      //   href: "https://saweria.co/mbaharip",
-      // },
+      {
+        name: "Trakteer",
+        currency: "IDR",
+        href: "https://trakteer.id/kulokenci",
+      },
     ],
   },
 };
