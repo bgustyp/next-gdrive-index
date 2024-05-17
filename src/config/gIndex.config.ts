@@ -33,7 +33,7 @@ const config: z.input<typeof Schema_Config> = {
    *
    * @default false
    */
-  showDeployGuide: true,
+  showDeployGuide: false,
 
   /**
    * DEPRECATED
